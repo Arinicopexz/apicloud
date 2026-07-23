@@ -51,7 +51,7 @@ jobs:
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: 54.165.63.77
-          username: Amazon Linux
+          username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo docker pull arinico/api-libreria:latest
